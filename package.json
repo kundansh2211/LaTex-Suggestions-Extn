@@ -1,6 +1,6 @@
 {
-  "name": "helloworld",
-  "displayName": "HelloWorld",
+  "name": "latex-completer",
+  "displayName": "LaTeX Completer",
   "description": "",
   "version": "0.0.1",
   "engines": {
