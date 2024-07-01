@@ -1,35 +1,32 @@
-# helloworld README
+# LaTeX-Suggestions-Extn README
 
-This is the README for your extension "helloworld". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "LaTeX-Suggestions-Extn". This extension provides intelligent suggestions for LaTeX documents, helping you to quickly insert modules based on partial or complete matches of your query.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Prefix Search**: Provides suggestions based on the prefix typed by the user.
+- **Efficient Search Algorithm**: Utilizes a Trie data structure to ensure fast and efficient search results.
+- **Easy Import Statements**: Automatically inserts import statements for the selected module.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
+![feature](images/feature.png)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+No additional dependencies are required for this extension.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+* `latexSuggestionsExtn.enable`: Enable/disable this extension.
+* `latexSuggestionsExtn.suggestionLimit`: Set the maximum number of suggestions to display.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- Duplicate suggestions may occasionally appear.
+- Performance may degrade with very large sets of URLs.
 
 ## Release Notes
 
@@ -37,15 +34,15 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
+Initial release of LaTeX-Suggestions-Extn.
 
 ### 1.0.1
 
-Fixed issue #.
+Fixed issue with duplicate suggestions.
 
 ### 1.1.0
 
-Added features X, Y, and Z.
+Added features for customizable suggestion limits.
 
 ---
 

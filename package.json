@@ -1,32 +1,32 @@
 {
-  "name": "latex-completer",
-  "displayName": "LaTeX Completer",
-  "description": "",
+  "name": "latex-suggestions-extn",
+  "displayName": "LaTeX Suggestions Extn",
+  "description": "An extension to provide intelligent LaTeX suggestions based on partial or complete matches.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.90.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kundansh2211/LaTex-Suggestions-Extn.git"
   },
   "categories": [
     "Other"
   ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "helloworld.helloWorld",
-        "title": "Hello World"
-      },
-      {
-        "command": "helloworld.searchUrls",
-        "title": "Search URLs"
-      }
-    ],
     "languages": [
       {
         "id": "latex",
         "aliases": ["LaTeX", "tex"],
         "extensions": [".tex"],
         "configuration": "./language-configuration.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "latexSuggestionsExtn.insertImportStatement",
+        "title": "Insert Import Statement"
       }
     ]
   },
